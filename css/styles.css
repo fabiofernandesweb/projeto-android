@@ -1,0 +1,92 @@
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #a8ddff;
+    --cor1: #89c5f8;
+    --cor2: #69adf2;
+    --cor3: #4a95eb;
+    --cor4: #2a7de4;
+    --cor5: #002e6d;
+
+    --fonte-padrao: "Poppins", sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-height: 150px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.404);
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+}
+
+main  {
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+}
