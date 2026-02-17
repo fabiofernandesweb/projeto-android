@@ -1,10 +1,26 @@
-# projeto-android
-Este projeto é um site que utilizamos as tecnologias HTML5 e CSS3 com responsividade.
+# 🚀 Projeto-android
 
-## Tecnologias utilizadas
--HTML5
--CSS3
+- Projeto desenvolvido para praticar HTML, CSS e JavaScript criando um site responsivo.)
 
-## Como rodar o projeto
-```bash
-git clone https://github.com/fabiofernandesweb/projeto-android.git
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+Ou acesse online:
+🔗 https://fabiofernandesweb.github.io/projeto-android/
+
+---
+
+## ⚙️ Funcionalidades
+
+- ✅ Menu hambúrguer responsivo
+- ✅ Layout responsivo
+
+---
+
