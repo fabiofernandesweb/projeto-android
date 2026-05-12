@@ -25,6 +25,7 @@
             <a href="#">Fale Conosco</a>
         </nav>
     </header>
+    <div class="nav-backdrop" id="navBackdrop"></div>
     <main>
         <article>
             <h1>História do Mascote do Android</h1>
@@ -141,23 +142,47 @@
     <script>
         const hamburger = document.getElementById("hamburger");
         const nav = document.getElementById("nav");
+        const navBackdrop = document.getElementById("navBackdrop");
+        const body = document.body;
+
+        function closeMenu() {
+            nav.classList.remove("active");
+            hamburger.classList.remove("active");
+            navBackdrop.classList.remove("active");
+            body.classList.remove("menu-open");
+        }
+
+        function openMenu() {
+            nav.classList.add("active");
+            hamburger.classList.add("active");
+            navBackdrop.classList.add("active");
+            body.classList.add("menu-open");
+        }
 
         hamburger.addEventListener("click", () => {
-            nav.classList.toggle("active");
+            if (nav.classList.contains("active")) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
         });
 
-        // Preencher ano dinamicamente no footer
-        document.getElementById("year").textContent = new Date().getFullYear();
+        navBackdrop.addEventListener("click", closeMenu);
 
-        // Fechar menu ao clicar em um link
+        // Close menu when clicking on a link
         document.querySelectorAll('.nav a').forEach(link => {
-            link.addEventListener('click', () => nav.classList.remove("active"));
+            link.addEventListener('click', closeMenu);
         });
 
-        // Fechar menu ao pressionar ESC
+        // Close menu on ESC key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') nav.classList.remove("active");
+            if (e.key === 'Escape' && nav.classList.contains("active")) {
+                closeMenu();
+            }
         });
+
+        // Fill year dynamically in footer
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
 
