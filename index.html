@@ -4,43 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra a história fascinante do mascote do Android, suas versões e curiosidades sobre o sistema operacional mais usado em dispositivos móveis.">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Como surgiu o mascote do Android?</title>
 </head>
 
 <body>
-    <header>
+    <a href="#main" class="skip-to-main">Pular para conteúdo principal</a>
+
+    <header role="banner">
         <h1>Curiosidades de Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="nav" id="nav">
-            <a href="#">Home</a>
-            <a href="#">Notícias</a>
-            <a href="#">Curiosidades</a>
-            <a href="#">Fale Conosco</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </button>
+        <nav class="nav" id="nav" role="navigation" aria-label="Navegação principal">
+            <a href="#home" aria-current="page">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#contato">Fale Conosco</a>
         </nav>
     </header>
-    <div class="nav-backdrop" id="navBackdrop"></div>
-    <main>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+    <main id="main" role="main">
         <article>
             <h1>História do Mascote do Android</h1>
 
             <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.
             </p>
-            
+
             <h2>A primeira versão</h2>
 
-            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a class="externo" href="https://ausdroid.net/news/2013/01/04/dan-morrill-shows-us-the-android-mascots-that-could-have-been/">Dan Morrill</a>. Ele conta que abriu o <a class="externo" href="https://inkscape.org/" target="_blank" rel="external">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresapara a criação de um mascote.
+            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a class="externo" href="https://ausdroid.net/news/2013/01/04/dan-morrill-shows-us-the-android-mascots-that-could-have-been/" target="_blank" rel="noopener noreferrer">Dan Morrill</a>. Ele conta que abriu o <a class="externo" href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresapara a criação de um mascote.
             </p>
 
             <picture>
                 <source media="(max-width: 700px)" srcset="./imagens/dan-droids-pq.png">
-                <img src="./imagens/dan-droids.png" alt="primeira versão dandroids">
+                <img src="./imagens/dan-droids.png" alt="Primeira versão dos mascotes do Android criada por Dan Morrill, conhecidos como Dandroids">
             </picture>
 
             <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <strong>Dandroids</strong>.
@@ -48,31 +52,33 @@
 
             <h2>Surge um novo mascote</h2>
 
-            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a class="externo" href="https://www.irinablok.com/android" target="_blank" rel="external">Irina Blok</a>, também funcionária do <strong>Google</strong>, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a class="externo" href="https://www.irinablok.com/android" target="_blank" rel="noopener noreferrer">Irina Blok</a>, também funcionária do <strong>Google</strong>, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
             </p>
 
             <picture>
                 <source media="(max-width: 700px)" srcset="./imagens/irina-blok-pq.jpg">
-                <img src="./imagens/irina-blok.jpg" alt="Irina Block, criadora do Bungdroid">
+                <img src="./imagens/irina-blok.jpg" alt="Irina Blok, ilustradora russa que criou o Bugdroid, o mascote atual do Android">
             </picture>
 
             <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <strong>Bugdroid</strong>, o novo mascote do <strong>Android</strong>.
             </p>
 
-            <img class="pequena" src="./imagens/bugdroid.png" alt="Bugdroid">
+            <img class="pequena" src="./imagens/bugdroid.png" alt="Bugdroid, o mascote oficial do Android com seu design minimalista">
 
             <p> A principal inspiração para os traços do novo <strong>Bugdroid</strong> veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do <strong>Google</strong> e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
             </p>
 
             <div class="video">
+                <h3>Vídeo sobre a história do Android</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=rJtc-f8iBJNV0ys7"
-                title="YouTube video player" frameborder="0"
+                title="Vídeo: A história do mascote do Android - YouTube"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
 
-            <aside>
+            <aside aria-label="Informações complementares sobre as versões do Android">
                 <h3>Quer aprender mais?</h3>
                 <p>Outro assunto curioso em relação ao <strong>Android</strong> é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.
                 </p>
@@ -97,7 +103,7 @@
                 <p>Infelizmente, o <strong>Android Q</strong> não existiu, pois o <strong>Google</strong> resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao <strong>Android 10</strong>.
                 </p>
 
-                <p>Acesse aqui o site <a class="externo" href="https://www.android.com/why-android/" target="_blank" rel="external">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema <strong>Android</strong>.
+                <p>Acesse aqui o site <a class="externo" href="https://www.android.com/why-android/" target="_blank" rel="noopener noreferrer">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema <strong>Android</strong>.
                 </p>
             </aside>
 
@@ -106,15 +112,15 @@
 
         </article>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Navegação</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Curiosidades</a></li>
-                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
                 </ul>
             </div>
 
@@ -126,10 +132,10 @@
             <div class="footer-section">
                 <h3>Redes Sociais</h3>
                 <ul class="social-links">
-                    <li><a href="https://facebook.com" target="_blank" rel="external" aria-label="Facebook">Facebook</a></li>
-                    <li><a href="https://twitter.com" target="_blank" rel="external" aria-label="Twitter">Twitter</a></li>
-                    <li><a href="https://instagram.com" target="_blank" rel="external" aria-label="Instagram">Instagram</a></li>
-                    <li><a href="https://linkedin.com" target="_blank" rel="external" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso Facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso Twitter">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso Instagram">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Visite nosso LinkedIn">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -148,6 +154,7 @@
         function closeMenu() {
             nav.classList.remove("active");
             hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
             navBackdrop.classList.remove("active");
             body.classList.remove("menu-open");
         }
@@ -155,6 +162,7 @@
         function openMenu() {
             nav.classList.add("active");
             hamburger.classList.add("active");
+            hamburger.setAttribute("aria-expanded", "true");
             navBackdrop.classList.add("active");
             body.classList.add("menu-open");
         }
@@ -179,6 +187,20 @@
             if (e.key === 'Escape' && nav.classList.contains("active")) {
                 closeMenu();
             }
+        });
+
+        // Keyboard navigation for menu links
+        const navLinks = document.querySelectorAll('.nav a');
+        navLinks.forEach((link, index) => {
+            link.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    navLinks[(index + 1) % navLinks.length].focus();
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    navLinks[(index - 1 + navLinks.length) % navLinks.length].focus();
+                }
+            });
         });
 
         // Fill year dynamically in footer

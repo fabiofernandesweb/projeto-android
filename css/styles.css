@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+*:focus-visible {
+    outline: 3px solid var(--cor4);
+    outline-offset: 2px;
+}
+
 @font-face {
     font-family: 'Android';
     src: url('../fontes/idroid.otf') format('opentype');
@@ -37,6 +42,23 @@ body {
 
 a.externo::after {
     content: '\1F517';
+}
+
+.skip-to-main {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--cor4);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 0 0 4px 0;
+    z-index: 10000;
+}
+
+.skip-to-main:focus {
+    top: 0;
 }
 
 header {
@@ -77,6 +99,19 @@ header>p {
     position: relative;
     z-index: 1001;
     padding: 10px;
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+    background-color: rgba(137, 197, 248, 0.2);
+}
+
+.hamburger:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
 }
 
 .hamburger span {
@@ -125,6 +160,11 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+nav a:focus-visible {
+    background-color: var(--cor2);
+    color: white;
+}
+
 main {
     padding: 30px;
     margin: auto;
@@ -154,6 +194,14 @@ main a:hover {
     text-decoration: none;
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(42, 125, 228, 0.3);
+}
+
+main a:focus-visible {
+    background-color: var(--cor2);
+    color: white;
+    text-decoration: none;
+    outline: 2px solid var(--cor5);
+    outline-offset: 1px;
 }
 
 main p {
@@ -281,6 +329,12 @@ footer .footer-section a:hover {
     padding-left: 5px;
 }
 
+footer .footer-section a:focus-visible {
+    color: var(--cor1);
+    outline: 2px solid var(--cor1);
+    outline-offset: 2px;
+}
+
 footer .footer-section p {
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
@@ -387,6 +441,12 @@ footer .footer-bottom {
 
     nav>a:hover::before {
         height: 24px;
+    }
+
+    nav>a:focus-visible {
+        background-color: rgba(137, 197, 248, 0.2);
+        outline: 2px solid white;
+        outline-offset: -2px;
     }
 
     .hamburger {
