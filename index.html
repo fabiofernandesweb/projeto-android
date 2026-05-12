@@ -26,7 +26,7 @@
         </nav>
     </header>
     <main>
-        <articule>
+        <article>
             <h1>História do Mascote do Android</h1>
 
             <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.
@@ -103,10 +103,39 @@
             <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema <strong>Android</strong> e seu  simpático mascote.
             </p>
 
-        </articule>
+        </article>
     </main>
     <footer>
-        <p>Site criado por <a href="#">Fabio Fernandes</a>.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Curiosidades</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Sobre</h3>
+                <p>Site dedicado a curiosidades sobre tecnologia e a história do mascote Android.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul class="social-links">
+                    <li><a href="https://facebook.com" target="_blank" rel="external" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="external" aria-label="Twitter">Twitter</a></li>
+                    <li><a href="https://instagram.com" target="_blank" rel="external" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="external" aria-label="LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Criado por <a href="#">Fabio Fernandes</a>. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script>
@@ -114,8 +143,21 @@
         const nav = document.getElementById("nav");
 
         hamburger.addEventListener("click", () => {
-        nav.classList.toggle("active");
-});
+            nav.classList.toggle("active");
+        });
+
+        // Preencher ano dinamicamente no footer
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => nav.classList.remove("active"));
+        });
+
+        // Fechar menu ao pressionar ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') nav.classList.remove("active");
+        });
     </script>
 </body>
 
